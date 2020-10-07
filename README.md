@@ -29,8 +29,8 @@ $ git commit -m "Tus comentarios a los cambios"
 $ git push
 ```
 ## Eliminando contenidos del repositorio
-Si deseamos eliminar ficheros que ya no forman parte del proyecto o hemos sincronizado al repositorio por error podemos usar `git rm`
+Si deseamos eliminar ficheros que ya no forman parte del proyecto o hemos sincronizado al repositorio por error podemos usar `git rm --cached`
 ```bash
 $ git rm --cached "DirectorioABorrar"
 ```
-
+El parámetro `--cached` hace que elimine los contenidos del repositorio sin eliminarlos de nuestro ordenador.
