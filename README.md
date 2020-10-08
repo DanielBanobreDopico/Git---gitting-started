@@ -1,5 +1,13 @@
 # Git: gitting started
 
+## Contenidos
+1. [Crendo un proyecto en GitHub y sincronizandolo en nuestro equipo.](#crendo-un-proyecto-en-github-y-sincronizandolo-en-nuestro-equipo)
+
+1. [Evitando que determinados contenidos pasen de nuestro ordenador al repositorio](#evitando-que-determinados-contenidos-pasen-de-nuestro-ordenador-al-repositorio)
+1. [Subiendo cambios al repositorio en GitHub](#subiendo-cambios-al-repositorio-en-github)
+1. [Eliminando contenidos del repositorio](#eliminando-contenidos-del-repositorio)
+1. [Creando un repositorio vacío en GitHub y poblándolo con los contenidos de una carpeta preexistente.](#creando-un-repositorio-vaco-en-github-y-poblndolo-con-los-contenidos-de-una-carpeta-preexistente)
+
 ## Crendo un proyecto en GitHub y sincronizandolo en nuestro equipo.
 
 1. Creamos el repositorio en GitHub y copiamos la URL del mismo
