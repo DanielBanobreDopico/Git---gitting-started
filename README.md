@@ -32,7 +32,7 @@ secrets.txt
 ```
 ## Subiendo cambios al repositorio en GitHub
 ```bash
-$ git add *
+$ git add .
 $ git commit -m "Tus comentarios a los cambios"
 $ git push
 ```
@@ -74,7 +74,7 @@ secrets.txt
 ```
 7. Preparamos el envío inicial del proyecto. Seleccionamos los ficheros a incluir en el repositorio, establecemos el `commit` y realizamos el primer `push` estableciendo `master` como la rama de destino.
 ```bash
-$ git add *
+$ git add .
 $ git commit -m "Aportación inicial"
 $ git push --set-upstream origin master
 ```
