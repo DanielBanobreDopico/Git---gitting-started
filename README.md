@@ -91,3 +91,88 @@ Una vez realizado este proceso inicial, podremos manejar nuestro proyecto de la 
 
 ## Trabajo en equipo
 
+Cuando trabajamos en equipo compartiendo un repositorio es necesario adoptar mecánicas de trabajo (flujos de trabajo) específicos.
+
+### Creación del respositorio
+
+El repositorio es creado por uno de los participantes siguiendo las mecánicas expuestas anteriormente.
+
+Una vez creado el respositorio y poblado con los ficheros iniciales (puede ser simplemente el README.md) el creador del invitará al resto de participantes en la gestión de acceso de la configuración del respositorio.
+
+### Clonación local del respositorio
+
+Tras los pasos anteriores, los participantes tendrán que crear la copia del respositorio en sus equipos locales y la configuración de sus identidades en el mismo:
+```bash
+$ git clone https://github.com/TuCuentaDeUsuario/RepoCompartido.git
+$ cd RepoCompartido
+$ git config user.name "Tu Nombre"
+$ git config user.email "tu@correo.es"
+```
+### Creación de ramas
+
+Lo siguiente será crear una "rama" para nuestro trabajo. Las ramas permiten que la evolución del código transite por diferentes caminos sin interferirse. Esto es útil cuando se trabaja de forma individual para poder probar diferentes soluciones sin afectar a la rama principal, pero es imprescindible para que varias personas puedan trabajar en un único proyecto sin pisarse entre si.
+
+Las ramas pueden emplearse de formas muy variadas. Cada empresa o cada equipo puede tener sus propias mecánicas definidas. Lo importante es que cada persona realice tareas definidas y que estas tareas realicen en sus ramas correspondientes para evitar interferencias y facilitar explorar diferentes soluciones.
+
+Al crear tu propia rama, los cambios que realices no se mezclarán con el trabajo de los demás. Una vez tu tarea esté finalizada tu rama podrá fusionarse con la rama principal y de esa manera los cambios se incorporarán al proyecto de forma definitiva. Para la siguiente tarea podrás abrir una nueva rama.
+
+Antes de abrir una rama:
+* Asegurate de haber guardado todos los cambios en todos los ficheros.
+* Asegurate de que los ficheros son coherentes dentro de tu tarea.
+
+Ya con todo en orden crea una rama, y publicala en el respositorio compartido y empezar a trabajar sobre ella:
+```bash
+$ git checkout -b nombreDeMiRama
+$ git push -u origin nombreDeMiRama
+```
+Tus cambios se realizarán en la rama que has creado, y esta rama estará accesible para tus compañeros en el repositorio. Esto último es opcional, pero te permitirá cooperar en las tareas de tus compañeros y que tus compañeros puedan participar de las tuyas.
+
+### Accediendo al las ramas de tus compañeros
+
+Es importante que todos los participantes en el proyecto se coodinen en la forma en que asignan nombres a sus ramas. Que no existan diferentes ramas con el mismo nombra facilita mucho las cosas.
+
+Actualizar tu respositorio local desde el respositorio remoto para ver si existen nuevas ramas en el proyecto:
+
+```bash
+$ git fetch
+$ git branch -a
+```
+
+Vamos a suponer que el resultado es algo como esto:
+
+```bash
+master
+* workgroup1
+remotes/origin/HEAD -> origin/master
+remotes/origin/master
+remotes/origin/workgroup
+remotes/origin/workgroup1
+```
+
+Para acceder a la rama origin/workgroup, guarda los cambios necesarios, pon orden y a continuación:
+
+```bash
+$ git checkout workgroup
+$ git config user.name "Tu Nombre"
+$ git config user.email "tu@correo.es"
+```
+
+Si compruebas nuevamente las ramas disponibles, verás que se ha creado una rama local correspondiente con la remota:
+
+```bash
+master
+workgroup1
+* workgroup
+remotes/origin/HEAD -> origin/master
+remotes/origin/master
+remotes/origin/workgroup
+remotes/origin/workgroup1
+```
+
+Todos los cambios que realices ahora serán almacenados en tu rama local y se sincronizarán en su correspondiente remota cuando hagas un `git push` desde la rama.
+
+### Buen uso de las entregas (commit)
+
+### Fusionando las ramas a la principal
+
+//https://stackify.com/git-checkout-remote-branch/
