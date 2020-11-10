@@ -1,6 +1,9 @@
 # Git: gitting started
 
 ## Contenidos
+
+### Uso básico
+
 1. [Crendo un proyecto en GitHub y sincronizandolo en nuestro equipo.](#crendo-un-proyecto-en-github-y-sincronizandolo-en-nuestro-equipo)
 
 1. [Evitando que determinados contenidos pasen de nuestro ordenador al repositorio](#evitando-que-determinados-contenidos-pasen-de-nuestro-ordenador-al-repositorio)
@@ -8,7 +11,13 @@
 1. [Eliminando contenidos del repositorio](#eliminando-contenidos-del-repositorio)
 1. [Creando un repositorio vacío en GitHub y poblándolo con los contenidos de una carpeta preexistente.](#creando-un-repositorio-vaco-en-github-y-poblndolo-con-los-contenidos-de-una-carpeta-preexistente)
 
-## Crendo un proyecto en GitHub y sincronizandolo en nuestro equipo.
+### Trabajo en equipo
+
+6. 
+
+## Uso básico
+
+### Crendo un proyecto en GitHub y sincronizandolo en nuestro equipo.
 
 1. Creamos el repositorio en GitHub y copiamos la URL del mismo
 1. Clonamos el proyecto en nuestro ordenador:
@@ -20,7 +29,7 @@ $ git clone https://github.com/TuCuentaDeUsuario/TuRepositorio.git
 $ git config user.name "Tu Nombre"
 $ git config user.email "tu@corr.eo"
 ```
-## Evitando que determinados contenidos pasen de nuestro ordenador al repositorio
+### Evitando que determinados contenidos pasen de nuestro ordenador al repositorio
 Hemos de crear un nuevo fichero `.gitignore` en la carpeta del proyecto.
 ```bash
 $ touch .gitignore
@@ -30,13 +39,13 @@ Edita el fichero con la misma aplicación que emplees para escribir código y a�
 /node_modules/
 secrets.txt
 ```
-## Subiendo cambios al repositorio en GitHub
+### Subiendo cambios al repositorio en GitHub
 ```bash
 $ git add .
 $ git commit -m "Tus comentarios a los cambios"
 $ git push
 ```
-## Eliminando contenidos del repositorio
+### Eliminando contenidos del repositorio
 Si deseamos eliminar ficheros que ya no forman parte del proyecto o hemos sincronizado al repositorio por error podemos usar `git rm --cached`.
 ```bash
 $ git rm --cached "CosaParaBorrarDelRepo"
@@ -47,7 +56,7 @@ Si omitimos este parámetro, eliminaremos lo que sea no del repositorio sino del
 $ git rm --cached "CosaParaBorrarDelUniverso".
 ```
 En cualquier caso, los cambios serán aplicados al repositorio dentro del próximo `commit`.
-## Creando un repositorio vacío en GitHub y poblándolo con los contenidos de una carpeta preexistente.
+### Creando un repositorio vacío en GitHub y poblándolo con los contenidos de una carpeta preexistente.
 Cuando ya tenemos un proyecto en nuestro ordenador y queremos publicarlo en GitHub, podemos hacerlo creando un repositorio vacío.
 1. Crearemos el repositorio sin marcar opciones de `.gitignore` ni `README.md`. Copiamos la URL del repositorio.
 1. Abrimos un terminal en la carpeta de nuestro proyecto y la inicializamos como repositorio de git:
@@ -79,3 +88,6 @@ $ git commit -m "Aportación inicial"
 $ git push --set-upstream origin master
 ```
 Una vez realizado este proceso inicial, podremos manejar nuestro proyecto de la forma habitual.
+
+## Trabajo en equipo
+
