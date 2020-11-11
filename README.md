@@ -171,8 +171,11 @@ remotes/origin/workgroup1
 
 Todos los cambios que realices ahora serán almacenados en tu rama local y se sincronizarán en su correspondiente remota cuando hagas un `git push` desde la rama.
 
-### Buen uso de las entregas (commit)
-
 ### Fusionando las ramas a la principal
 
-//https://stackify.com/git-checkout-remote-branch/
+Una vez qur hayas encontrado una solución satisfactoria o completado una taréa, que esta ha sido supervisada y se ha comprobado que todo está en orden, puedes fusionar la rama en la que has estado trabajando con la rama principal para hacer esta aportación definitiva:
+
+```bash
+$ git checkout master
+$ git merge workgroup1 -m 'Incorporación de la rutina de detección de malware'
+```
