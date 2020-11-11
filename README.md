@@ -191,3 +191,7 @@ $ git merge workgroup1 -m 'Incorporación de la rutina de detección de malware'
 Cuando trabajas con GitHub puede solicitar la revisión y aprobación de tus aportaciones realizando un *Pull Request*.
 
 Cuando haces un pull request indicas que quieres fusionar dos ramas y se crea un dialogo en el que tus compañeros pueden comprobar las aportaciones de dicha rama y hacer correcciones al respecto. Suele haber una persona encargada de aceptar o no los pull request y cerrarlos si es el caso.
+
+## Referencias:
+
+[Git commit practices your future self will thank you for](https://victoria.dev/blog/git-commit-practices-your-future-self-will-thank-you-for/)
