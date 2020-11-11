@@ -170,6 +170,13 @@ remotes/origin/workgroup1
 ```
 
 Todos los cambios que realices ahora serán almacenados en tu rama local y se sincronizarán en su correspondiente remota cuando hagas un `git push` desde la rama.
+### Manteniendose al día
+
+Para trabajar en tu rama emplea los mecanismos normales: commit, push, pull, fecth, merge...
+
+La única diferencia será que el comando que emplees afectarán a las ramas local y remota en la que estés trabajando en ese momento.
+
+Tendrás que hacer un pull para ver el contenido actualizado de una rama de un compañero y tendrás que hacer un push en tu rama si quieres que tus compañeros puedan acceder a tu trabajo.
 
 ### Fusionando las ramas a la principal
 
@@ -179,3 +186,8 @@ Una vez qur hayas encontrado una solución satisfactoria o completado una taréa
 $ git checkout master
 $ git merge workgroup1 -m 'Incorporación de la rutina de detección de malware'
 ```
+### Pull request
+
+Cuando trabajas con GitHub puede solicitar la revisión y aprobación de tus aportaciones realizando un *Pull Request*.
+
+Cuando haces un pull request indicas que quieres fusionar dos ramas y se crea un dialogo en el que tus compañeros pueden comprobar las aportaciones de dicha rama y hacer correcciones al respecto. Suele haber una persona encargada de aceptar o no los pull request y cerrarlos si es el caso.
