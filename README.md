@@ -1,4 +1,4 @@
-# Git: gitting started
+# *Gitting* started
 
 ## Contenidos
 
@@ -195,3 +195,5 @@ Cuando haces un pull request indicas que quieres fusionar dos ramas y se crea un
 ## Referencias:
 
 [Git commit practices your future self will thank you for](https://victoria.dev/blog/git-commit-practices-your-future-self-will-thank-you-for/)
+[Getting started with Git and GitHub: the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+[Numerous undo possibilities in Git](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)
